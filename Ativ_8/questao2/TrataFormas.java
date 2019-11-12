@@ -46,6 +46,8 @@ public class TrataFormas {
                 aux.obterVolume();
                 retorno += "Volume: "+aux.obterVolume()+"\n";
             }catch(NaoExisteVolumeException e){
+                //Dessa forma informa como se fosse um erro, em vermelho e tal
+                //System.err.println(e.getMessage);
                 retorno += e.getMessage()+"\n";
             }retorno += "\n";
         }if(retorno.equals(""))
